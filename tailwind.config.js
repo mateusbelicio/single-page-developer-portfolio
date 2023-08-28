@@ -7,7 +7,7 @@ export default {
       padding: {
         DEFAULT: '1.5rem',
         md: '2.5rem',
-        xl: '0',
+        xl: '0rem',
       },
     },
     extend: {
@@ -23,8 +23,15 @@ export default {
           600: '#141414',
         },
       },
+      backgroundImage: {
+        patternRings: "url('/pattern-rings.svg')",
+        patternCircle: "url('/pattern-circle.svg')",
+      },
       fontFamily: {
         sans: "'Space Grotesk', sans-serif",
+      },
+      maxWidth: {
+        container: '69.375rem',
       },
     },
   },
