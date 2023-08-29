@@ -5,22 +5,21 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1.5rem',
-        md: '2.5rem',
+        DEFAULT: '1rem',
+        sm: '1.5rem',
+        md: '1.875rem',
         xl: '0rem',
       },
     },
     extend: {
       colors: {
-        primary: '#4ce19e',
+        primary: '#4ee1a0',
         accent: '#ff6f5c',
         neutral: {
-          100: '#ffffff',
-          200: '#d9d9d9',
-          300: '#808080',
-          400: '#404040',
-          500: '#242424',
-          600: '#141414',
+          50: '#ffffff',
+          300: '#d9d9d9',
+          800: '#242424',
+          900: '#151515',
         },
       },
       backgroundImage: {

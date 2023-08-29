@@ -9,9 +9,9 @@ const links = [
 
 function SocialList() {
   return (
-    <ul className="flex items-center gap-8">
+    <ul className="flex items-center gap-6 sm:gap-8">
       {links.map((link) => (
-        <li key={link.name} className="h-6">
+        <li key={link.name} className="h-5 sm:h-6">
           <SocialLink {...link} />
         </li>
       ))}
