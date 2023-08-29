@@ -1,3 +1,4 @@
+import Experience from './components/Experience';
 import Header from './components/Header';
 import Hero from './components/Hero';
 
@@ -7,39 +8,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-
-        <section className="experience">
-          <div className="experience__content container">
-            <h2 className="experience__title visualy-hidden">Experience</h2>
-
-            <ul className="experience__list">
-              <li className="experience__item">
-                <p className="experience__name heading-l">HTML</p>
-                <p className="experience__time">4 Years Experience</p>
-              </li>
-              <li className="experience__item">
-                <p className="experience__name heading-l">CSS</p>
-                <p className="experience__time">4 Years Experience</p>
-              </li>
-              <li className="experience__item">
-                <p className="experience__name heading-l">JavaScript</p>
-                <p className="experience__time">4 Years Experience</p>
-              </li>
-              <li className="experience__item">
-                <p className="experience__name heading-l">Accessibility</p>
-                <p className="experience__time">4 Years Experience</p>
-              </li>
-              <li className="experience__item">
-                <p className="experience__name heading-l">React</p>
-                <p className="experience__time">3 Years Experience</p>
-              </li>
-              <li className="experience__item">
-                <p className="experience__name heading-l">Sass</p>
-                <p className="experience__time">3 Years Experience</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Experience />
 
         <section className="projects">
           <div className="projects__content container">
@@ -92,7 +61,9 @@ function App() {
                       </a>
                     </figcaption>
                   </figure>
-                  <h3 className="project__title heading-m">E-learning landing page</h3>
+                  <h3 className="project__title heading-m">
+                    E-learning landing page
+                  </h3>
                   <div className="project__tags">
                     <span className="project__tag">HTML</span>
                     <span className="project__tag">CSS</span>
@@ -141,7 +112,9 @@ function App() {
                       </a>
                     </figcaption>
                   </figure>
-                  <h3 className="project__title heading-m">Entertainment web app</h3>
+                  <h3 className="project__title heading-m">
+                    Entertainment web app
+                  </h3>
                   <div className="project__tags">
                     <span className="project__tag">HTML</span>
                     <span className="project__tag">CSS</span>
@@ -191,7 +164,9 @@ function App() {
                       </a>
                     </figcaption>
                   </figure>
-                  <h3 className="project__title heading-m">Art gallery showcase</h3>
+                  <h3 className="project__title heading-m">
+                    Art gallery showcase
+                  </h3>
                   <div className="project__tags">
                     <span className="project__tag">HTML</span>
                     <span className="project__tag">CSS</span>
@@ -209,13 +184,20 @@ function App() {
           <div className="contact__content container">
             <h2 className="contact__title heading-xl">Contact</h2>
             <p className="contact__description">
-              I would love to hear about your project and how I could help. Please fill in the form,
-              and I’ll get back to you as soon as possible.
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
             </p>
 
             <form className="contact__form">
               <div className="contact__group" data-invalid="false">
-                <input type="text" id="name" name="name" placeholder="name" aria-label="name" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="name"
+                  aria-label="name"
+                />
                 <p className="contact__error">Sorry, invalid format here</p>
               </div>
               <div className="contact__group" data-invalid="false">

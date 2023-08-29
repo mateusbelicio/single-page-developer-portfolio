@@ -1,4 +1,4 @@
-import SocialLink from '../ui/SocialLink';
+import SocialLink from './SocialLink';
 
 const links = [
   { icon: 'github', name: 'Github' },

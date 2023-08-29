@@ -6,7 +6,7 @@ import HeroConteiner from './HeroConteiner';
 function Hero() {
   return (
     <section
-      className="pb-20 pt-7 sm:py-[3.75rem] lg:pb-[6.5rem] lg:pt-[1.875rem] "
+      className="pb-10 pt-7 sm:pb-[1.875rem] sm:pt-[3.75rem] lg:pb-12 lg:pt-[1.875rem] "
       id="hero"
     >
       <HeroConteiner>

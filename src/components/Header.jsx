@@ -1,5 +1,5 @@
 import Logo from '../ui/Logo';
-import SocialList from './SocialList';
+import SocialList from '../ui/SocialList';
 
 function Header() {
   return (
