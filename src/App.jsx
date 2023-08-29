@@ -1,65 +1,12 @@
+import Header from './components/Header';
+import Hero from './components/Hero';
+
 function App() {
   return (
     <>
-      <header className="header">
-        <div className="header__content container">
-          <a href="#" className="header__logo logo">
-            adamkeyes
-          </a>
-
-          <ul className="social">
-            <li className="social__item">
-              <a href="#" className="social__link" aria-label="Github">
-                <svg className="social__icon">
-                  <use xlinkHref="/src/assets/images/icons.svg#icon-github" />
-                </svg>
-              </a>
-            </li>
-            <li className="social__item">
-              <a href="#" className="social__link" aria-label="Frontend Mentor">
-                <svg className="social__icon">
-                  <use xlinkHref="/src/assets/images/icons.svg#icon-frontend-mentor" />
-                </svg>
-              </a>
-            </li>
-            <li className="social__item">
-              <a href="#" className="social__link" aria-label="Linkedin">
-                <svg className="social__icon">
-                  <use xlinkHref="/src/assets/images/icons.svg#icon-linkedin" />
-                </svg>
-              </a>
-            </li>
-            <li className="social__item">
-              <a href="#" className="social__link" aria-label="Twitter">
-                <svg className="social__icon">
-                  <use xlinkHref="/src/assets/images/icons.svg#icon-twitter" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <main className="main-page">
-        <div className="hero" id="hero">
-          <div className="hero__content container">
-            <h1 className="hero__title heading-xl">
-              Nice to meet you! I&apos;m <span>Adam Keyes</span>.
-            </h1>
-            <p className="hero__description">
-              Based in the UK, I&apos;m a front-end developer passionate about building accessible
-              web apps that users love.
-            </p>
-
-            <a href="#contact" className="hero__cta btn">
-              Contact me
-            </a>
-
-            <picture className="hero__image">
-              <img src="src/assets/images/image-profile-mobile.webp" alt="" />
-            </picture>
-          </div>
-        </div>
+      <Header />
+      <main>
+        <Hero />
 
         <section className="experience">
           <div className="experience__content container">
@@ -300,7 +247,7 @@ function App() {
           </div>
         </section>
 
-        <div className="footer__content container">
+        <div className="footer__content containe">
           <a href="#" className="footer__logo logo">
             adamkeyes
           </a>

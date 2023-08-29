@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-sans text-base sm:text-lg text-neutral-300 font-medium min-h-screen bg-neutral-900 selection:bg-primary selection:text-neutral-950 overflow-x-hidden
+  }
+
+  html {
+    @apply scroll-smooth scroll-py-[3.75rem] lg:scroll-py-[5.25rem] ;
+  }
+
+  p {
+    @apply leading-7
+  }
+}
+
+@layer utilities {
+  .focus-default {
+    @apply transition-colors duration-300 focus-visible:text-primary focus-visible:outline-1 focus-visible:outline focus-visible:outline-primary focus-visible:outline-offset-2
+  }
+}
+
+@layer components {
+  .rings-pattern {
+    @apply relative before:bg-patternRings before:bg-contain before:bg-no-repeat before:w-[33.125rem] before:h-[8.0625rem] before:absolute
+  }
+
+  .circle-pattern {
+    @apply after:absolute after:h-[8.0625rem] after:w-[8.0625rem] after:bg-patternCircle after:bg-contain after:bg-no-repeat after:z-10
+  }
+}
+
 /* :root {
   --fs-100: 0.625rem;
   --fs-200: 0.75rem;
@@ -21,7 +51,7 @@
   --fs-large-600: 5.5rem;
 } */
 
-html {
+/* html {
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -41,12 +71,12 @@ figure,
 svg {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* ============================ */
 /* UTILITIES CLASSES */
 
-.container {
+/* .container {
   --padding: 1.5rem;
   --max-width: 69.375rem;
 
@@ -96,12 +126,12 @@ svg {
   font-size: var(--fs-600);
   font-weight: 700;
   line-height: var(--fs-800);
-}
+} */
 
 /* ============================ */
 /* BUTTONS */
 
-.btn {
+/* .btn {
   display: inline-block;
   background: none;
   border: none;
@@ -123,12 +153,12 @@ svg {
 
 .btn:hover {
   color: var(--clr-primary-400);
-}
+} */
 
 /* ============================ */
 /* HEADER */
 
-.header {
+/* .header {
   padding-block: 2.5rem;
 }
 
@@ -138,47 +168,12 @@ svg {
   justify-content: space-between;
 
   color: var(--clr-neutral-100);
-}
-
-/* ============================ */
-/* SOCIAL LIST */
-
-.social {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-
-  list-style: none;
-  color: currentColor;
-}
-
-.social__item {
-  height: 1.5rem;
-}
-
-.social__link {
-  color: currentColor;
-  text-decoration: none;
-  height: 1.5rem;
-  width: 1.5rem;
-  display: inline-block;
-
-  transition: color 250ms;
-}
-
-.social__link:hover {
-  color: var(--clr-primary-400);
-}
-
-.social__icon {
-  display: block;
-  height: 100%;
-}
+} */
 
 /* ============================ */
 /* HERO */
 
-.hero {
+/* .hero {
   padding-block: 5.5rem 5.9375rem;
 }
 
@@ -222,12 +217,12 @@ svg {
   position: absolute;
   bottom: 0;
   z-index: -1;
-}
+} */
 
 /* ============================ */
 /* EXPERIENCE */
 
-.experience {
+/* .experience {
   padding-block: 4.5rem;
   position: relative;
 }
@@ -260,12 +255,12 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
-}
+} */
 
 /* ============================ */
 /* PROJECTS */
 
-.projects {
+/* .projects {
   padding-block: 4.875rem 8.75rem;
 }
 
@@ -294,12 +289,12 @@ svg {
 
 .projects__item {
   grid-column: span 6;
-}
+} */
 
 /* ============================ */
 /* PROJECT CARD */
 
-.project {
+/* .project {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -338,12 +333,12 @@ svg {
   display: flex;
   align-items: center;
   gap: 1.125rem;
-}
+} */
 
 /* ============================ */
 /* CONTACT */
 
-.contact {
+/* .contact {
   padding-bottom: 5.75rem;
   position: relative;
 }
@@ -446,12 +441,12 @@ svg {
   right: 0;
 
   visibility: hidden;
-}
+} */
 
 /* ============================ */
 /* FOOTER */
 
-.footer {
+/* .footer {
   background-color: var(--clr-neutral-500);
   padding-block: 5.25rem 5.75rem;
 }
@@ -461,17 +456,6 @@ svg {
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 3rem;
+  padding-top: 3rem; 
 }
-
-/* ============================ */
-/* LOGO */
-
-.logo {
-  color: var(--clr-neutral-100);
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.44px;
-  line-height: 1;
-}
+*/
