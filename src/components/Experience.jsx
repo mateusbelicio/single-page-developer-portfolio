@@ -12,17 +12,20 @@ const experiences = [
 
 function Experience() {
   return (
-    <section className="py-10 sm:py-[1.875rem] lg:py-14">
-      <div className="container grid max-w-container gap-y-10 sm:gap-y-[3.25rem] lg:gap-y-[4.5rem]">
+    <section className="py-10 sm:py-[1.875rem] lg:py-14 ">
+      <div className="rings-pattern container relative grid max-w-container gap-y-10 before:bottom-0  before:left-1/2 before:translate-y-1/2 sm:gap-y-[3.25rem] sm:before:translate-x-1/3 lg:gap-y-[4.5rem] lg:before:left-full lg:before:-translate-x-[7.6875rem]">
         <Separator />
         <div>
           <Title type="h2" size="xl" className="sr-only">
             Experience
           </Title>
 
-          <ul className="grid items-center gap-x-2.5 gap-y-6 text-center sm:grid-cols-[repeat(auto-fit,_minmax(18rem,_1fr))] sm:gap-y-[3.25rem] sm:text-left md:gap-x-[1.875rem] lg:grid-cols-[repeat(auto-fit,_minmax(21.5625rem,_1fr))] lg:gap-y-[3.625rem]">
+          <ul className="grid items-center gap-x-2.5 gap-y-6 text-center sm:grid-cols-12 sm:gap-y-[3.25rem] sm:text-left lg:gap-x-[1.875rem] lg:gap-y-[3.625rem]">
             {experiences.map((exp) => (
-              <li className="sm:space-y-3.5" key={exp.name}>
+              <li
+                className="sm:col-span-6 sm:space-y-3.5 lg:col-span-4"
+                key={exp.name}
+              >
                 <Title type="h3">{exp.name}</Title>
                 <p className="">{exp.experienceTime} Experience</p>
               </li>

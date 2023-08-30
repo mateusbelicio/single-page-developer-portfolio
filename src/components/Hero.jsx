@@ -1,7 +1,7 @@
 import Title from './Title';
 import Button from '../ui/Button';
 import HeroImage from './HeroImage';
-import HeroConteiner from './HeroConteiner';
+import HeroContainer from './HeroContainer';
 
 function Hero() {
   return (
@@ -9,7 +9,7 @@ function Hero() {
       className="pb-10 pt-7 sm:pb-[1.875rem] sm:pt-[3.75rem] lg:pb-12 lg:pt-[1.875rem] "
       id="hero"
     >
-      <HeroConteiner>
+      <HeroContainer>
         <div className="flex flex-col items-center gap-y-6 sm:z-10 sm:col-start-1 sm:col-end-9 sm:row-start-1 sm:items-start sm:gap-y-8 lg:gap-y-11 lg:pt-14">
           <Title type="h1" size="xl" className="hero__title sm:mb-7 lg:mb-0">
             <span className="md:block lg:inline">Nice to</span> meet you!
@@ -31,7 +31,7 @@ function Hero() {
         </div>
 
         <HeroImage />
-      </HeroConteiner>
+      </HeroContainer>
     </section>
   );
 }
