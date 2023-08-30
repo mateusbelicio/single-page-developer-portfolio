@@ -15,6 +15,7 @@ export default {
       colors: {
         primary: '#4ee1a0',
         accent: '#ff6f5c',
+        error: '#ff6f5b',
         neutral: {
           50: '#ffffff',
           300: '#d9d9d9',
