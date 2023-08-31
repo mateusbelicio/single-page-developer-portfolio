@@ -7,9 +7,9 @@ const links = [
   { icon: 'twitter', name: 'Twitter' },
 ];
 
-function SocialList() {
+function SocialList({ className = '' }) {
   return (
-    <ul className="flex items-center gap-6 sm:gap-8">
+    <ul className={`flex items-center gap-6 sm:gap-8 ${className}`}>
       {links.map((link) => (
         <li key={link.name} className="h-5 sm:h-6">
           <SocialLink {...link} />

@@ -5,7 +5,7 @@ import Title from './Title';
 const experiences = [
   { name: 'HTML', experienceTime: '4 Years' },
   { name: 'CSS', experienceTime: '4 Years' },
-  { name: 'JavaScript', experienceTime: '4 Years' },
+  { name: 'Javascript', experienceTime: '4 Years' },
   { name: 'Accessibility', experienceTime: '4 Years' },
   { name: 'React', experienceTime: '3 Years' },
   { name: 'Sass', experienceTime: '3 Years' },
@@ -14,7 +14,7 @@ const experiences = [
 function Experience() {
   return (
     <section className="py-10 sm:py-[1.875rem] lg:py-14 ">
-      <div className="rings-pattern container relative grid max-w-container gap-y-10 before:bottom-0  before:left-1/2 before:translate-y-1/2 sm:gap-y-[3.25rem] sm:before:translate-x-1/3 lg:gap-y-[4.5rem] lg:before:left-full lg:before:-translate-x-[7.6875rem]">
+      <div className="rings-pattern container relative grid max-w-container gap-y-10 before:bottom-0 before:left-1/2 before:translate-y-1/2 sm:gap-y-[3.25rem] sm:before:translate-x-1/3 lg:gap-y-[4.5rem] lg:before:left-full lg:before:-translate-x-[7.6875rem]">
         <Separator />
         <div>
           <Title type="h2" size="xl" className="sr-only">
