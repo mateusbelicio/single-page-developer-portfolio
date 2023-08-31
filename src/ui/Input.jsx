@@ -14,7 +14,7 @@ function Input({
   const id = useId();
   const controls = useAnimationControls();
   const inputStyle =
-    'focus:data-[invalid=true]:border-error data-[invalid=true]:border-error border-b border-neutral-50 bg-neutral-800 pb-4 pl-6 pr-8 uppercase outline-none focus:border-primary';
+    'focus:data-[invalid=true]:border-error data-[invalid=true]:border-error border-b border-neutral-50 bg-transparent pb-4 pl-6 pr-8 uppercase outline-none focus:border-primary';
 
   useEffect(() => {
     if (hasError) controls.start('start');
@@ -24,14 +24,12 @@ function Input({
     <div className="relative flex flex-col">
       {type === 'textarea' ? (
         <textarea
-          className={inputStyle + ' resize-none'}
+          className={inputStyle + ' h-[6.75rem] resize-none'}
           id={id}
           aria-errormessage={`${id}-error`}
           value={value}
           onChange={handleChange}
           name={name}
-          cols="30"
-          rows="5"
           data-invalid={hasError}
           required
           {...rest}

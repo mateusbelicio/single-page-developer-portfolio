@@ -4,6 +4,7 @@ import Title from './Title';
 
 function ProjectItem({
   src,
+  srcSmall = undefined,
   projectLink = '#',
   codeLink = '#',
   title,
@@ -12,15 +13,24 @@ function ProjectItem({
   return (
     <li className="sm:col-span-6">
       <article className="grid grid-rows-[repeat(3,_min-content)] gap-y-5 sm:[&>*]:col-start-1 sm:[&>*]:col-end-1">
-        <picture className="block h-[15.8125rem] w-full border border-neutral-800 sm:h-[25rem] lg:row-start-1">
-          <Reveal className="block h-full w-full">
+        <Reveal className="block h-[15.8125rem] w-full border border-neutral-800 sm:h-[25rem] lg:row-start-1">
+          <picture>
+            {srcSmall && (
+              <source
+                media="(max-width: 48em)"
+                srcSet={srcSmall}
+                sizes="48em"
+              />
+            )}
             <img
               src={src}
+              width="546"
+              height="400"
               alt={`Thumbnail of the "${title}" project`}
               className="flex h-full w-full items-center justify-center object-cover object-top"
             />
-          </Reveal>
-        </picture>
+          </picture>
+        </Reveal>
         <div className="space-y-2">
           <Reveal>
             <Title type="h3" size="md" className="project__title heading-m">

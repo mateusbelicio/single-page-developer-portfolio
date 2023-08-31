@@ -6,7 +6,7 @@ function HeroImage() {
       <img
         className="h-full w-full shrink-0 object-cover object-top"
         src={heroImage}
-        alt=""
+        alt="Grayscale profile picture of Adam Keyes"
       />
     </picture>
   );
