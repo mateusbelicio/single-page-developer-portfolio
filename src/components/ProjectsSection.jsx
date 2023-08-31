@@ -9,18 +9,23 @@ import projectImage3 from '../assets/thumbnail-project-3-large.webp';
 import projectImage4 from '../assets/thumbnail-project-4-large.webp';
 import projectImage5 from '../assets/thumbnail-project-5-large.webp';
 import projectImage6 from '../assets/thumbnail-project-6-large.webp';
+import Reveal from '../features/revealOnScroll/Reveal';
 
 function ProjectsSection() {
   return (
     <section className="pb-20 pt-10 sm:pb-[6.25rem] sm:pt-[4.375rem] lg:pb-[8.75rem] lg:pt-[5.25rem]">
       <div className="container max-w-container space-y-10 sm:space-y-[3.75rem] lg:space-y-20">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <Title type="h2" size="xl">
-            Projects
-          </Title>
-          <Button as="a" href="#contact">
-            Contact me
-          </Button>
+          <Reveal>
+            <Title type="h2" size="xl">
+              Projects
+            </Title>
+          </Reveal>
+          <Reveal>
+            <Button as="a" href="#contact">
+              Contact me
+            </Button>
+          </Reveal>
         </div>
 
         <ProjectsList>

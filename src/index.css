@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-#toasts-portal {
-  @apply absolute top-6 right-6 flex flex-col items-end gap-8;
+#root {
+  @apply overflow-x-hidden
 }
 
 @layer base {

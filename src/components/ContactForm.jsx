@@ -76,7 +76,7 @@ function ContactForm() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="flex flex-col gap-8 sm:col-span-8 sm:col-start-3 lg:col-start-8 lg:col-end-[-1]"
+      className="mx-auto flex w-full max-w-md flex-col gap-8 sm:col-span-8 sm:col-start-3 sm:max-w-none lg:col-start-8 lg:col-end-[-1]"
     >
       <Toast />
       <Input

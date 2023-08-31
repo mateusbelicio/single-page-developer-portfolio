@@ -1,3 +1,4 @@
+import Reveal from '../features/revealOnScroll/Reveal';
 import Separator from '../ui/Separator';
 import Title from './Title';
 
@@ -20,14 +21,18 @@ function Experience() {
             Experience
           </Title>
 
-          <ul className="grid items-center gap-x-2.5 gap-y-6 text-center sm:grid-cols-12 sm:gap-y-[3.25rem] sm:text-left lg:gap-x-[1.875rem] lg:gap-y-[3.625rem]">
+          <ul className="grid items-center justify-items-center gap-x-2.5 gap-y-6 text-center sm:grid-cols-12 sm:justify-items-start sm:gap-y-[3.25rem] sm:text-left lg:gap-x-[1.875rem] lg:gap-y-[3.625rem]">
             {experiences.map((exp) => (
               <li
                 className="sm:col-span-6 sm:space-y-3.5 lg:col-span-4"
                 key={exp.name}
               >
-                <Title type="h3">{exp.name}</Title>
-                <p className="">{exp.experienceTime} Experience</p>
+                <Reveal className="mx-auto sm:mx-0">
+                  <Title type="h3">{exp.name}</Title>
+                </Reveal>
+                <Reveal className="mx-auto sm:mx-0">
+                  <p className="">{exp.experienceTime} Experience</p>
+                </Reveal>
               </li>
             ))}
           </ul>
