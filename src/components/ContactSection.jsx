@@ -1,5 +1,4 @@
-import Button from '../ui/Button';
-import Input from '../ui/Input';
+import ContactForm from './ContactForm';
 import Title from './Title';
 
 function ContactSection() {
@@ -18,15 +17,7 @@ function ContactSection() {
         </p>
       </div>
 
-      <form className="flex flex-col gap-8 sm:col-span-8 sm:col-start-3 lg:col-start-8 lg:col-end-[-1]">
-        <Input name="name" placeholder="name" />
-        <Input type="email" name="email" placeholder="email" />
-        <Input type="textarea" name="message" placeholder="message" />
-
-        <Button type="submit" className="self-end">
-          Send message
-        </Button>
-      </form>
+      <ContactForm />
     </section>
   );
 }
